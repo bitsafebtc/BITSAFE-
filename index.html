@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BitSafe Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>BITSAFE</h1>
+        <div class="top-buttons">
+            <button onclick="deposit()">Deposit</button>
+            <button onclick="withdraw()">Withdraw</button>
+        </div>
+        <div class="balance-display" id="balance-display"></div>
+        <div class="transaction-history-container">
+            <h2>Transaction History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="transaction-history">
+                    <!-- Transaction history will be displayed here -->
+                </tbody>
+            </table>
+        </div>
+        <div class="buttons">
+            <button onclick="transfer()">Transfer</button>
+            <button onclick="showRates()">Show Rates</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+        <!-- VIP Subscription Button -->
+        <div class="subscribe-container">
+            <button onclick="subscribeToVIP()">Subscribe to VIP</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
