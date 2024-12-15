@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Dashboard Container Styles */
+.dashboard-container {
+    background-color: white;
+    padding: 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.view-account-btn img {
+  cursor: pointer;
+  width: 40px; /* Adjust image size */
+}
+
+/* Header Styles */
+h1 {
+    color: #333;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin: 0 0 20px 0;
+    padding: 0 20px;
+    white-space: nowrap;
+}
+
+/* Top Buttons Styles */
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+/* Balance Display Styles */
+.balance-display {
+    font-size: 20px;
+    color: #555;
+    border: 0px solid #007bff;
+    padding: 0px;
+    border-radius: 1px;
+    background-color: #f9f9f9;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transaction-history {
+  max-width: 800px;
+  margin: 40px auto;
+   padding: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} 
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+} 
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+} 
+
+th {
+  background-color: #f0f0f0;
+}
+
+/* Buttons Container Styles */
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Subscribe Container Styles */
+.subscribe-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.dashboard-container, .balance-display, button {
+    animation: fadeIn 0.5s ease-in-out;
+}

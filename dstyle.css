@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* User Details Container Styles */
+.user-details-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Header Styles */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* User Details Styles */
+.user-details {
+  margin-bottom: 20px;
+}
+
+.detail-item {
+  margin: 10px 0;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+span {
+  color: #333;
+}
+
+/* Button Styles */
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
