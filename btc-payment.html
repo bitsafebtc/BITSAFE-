@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitSafe Payment</title>
+    <link rel="stylesheet" href="/btcpayment.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Complete Your Payment</h1>
+        <p>To subscribe, please send the exact amount of BTC to the wallet address below:</p>
+        <strong id="btc-price"></strong>
+        <p class="wallet-address">1FzWLkYXWDzNjzQ7Q3mM4g2SjKw2jHhkaj</p>
+        <p>Awaiting payment confirmation: Your subscription will be activated once payment is confirmed.</p>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+    <script>
+        // Retrieve the price from the URL query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const price = urlParams.get('price');
+        document.getElementById('btc-price').innerText = `${price} BTC`;
+
+        // Function to redirect to the homepage
+function goBack() {
+  window.location.href = 'index.html'; // Replace 'index.html' with the actual path to your homepage
+}
+    </script>
+</body>
+</html>
